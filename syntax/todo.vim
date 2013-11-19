@@ -27,7 +27,7 @@ syn match   todoSection ".*{{{.*"
 syn match   todoSection ".*}}}.*"
 
 
-syn match   todoDTP     "\(\d\{1,2\}\/\d\{1,2\}\(\/\d\{2}\)\?\)\( \d\{4\}\)\?\( (\([^()]\+\))\)\?:"  contains=todoTime,todoPlace
+syn match   todoDTP     "\([mtwrfsuMTWRFSU]\?\d\{1,2\}\/\d\{1,2\}\(\/\d\{2}\)\?\)\( \d\{4\}\)\?\( (\([^()]\+\))\)\?:"  contains=todoTime,todoPlace
 syn match   todoTime    "\d\{4\}"
 syn match   todoPlace   "(\([^()]\+\))"
 
